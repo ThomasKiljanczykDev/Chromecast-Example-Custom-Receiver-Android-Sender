@@ -9,129 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d330b96-04d7-45fe-b664-e9cdebeb9eaa" name="Changes" comment="Resolve build errors">
-      <change afterPath="$PROJECT_DIR$/android/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/ic_launcher-playstore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/cast/CastOptionsProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/cast/CustomMediaRouteActionProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/cast/CustomMediaRouteControllerDialogFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/cast/CustomMediaRouteDialogFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/constants/CastConstants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/enums/MoveAction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/ui/main/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/ui/main/MainViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/pl/gunock/chromecastexample/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/menu/menu_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/3oea9z5kxun75pw45xuvvmxfh/2afy0c1p3jte0vucnkfev7aw5/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/3oea9z5kxun75pw45xuvvmxfh/3d1gvwyr3sh0j0p72mameptv/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/3oea9z5kxun75pw45xuvvmxfh/673q47ut7vnwnuqtf93pmylvu/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/3oea9z5kxun75pw45xuvvmxfh/8osclk4nykaubvpgahdpw79u4/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/4vfhvl9b5uuesvjhqa2ma77gt/4bvtg6k1mwskavluh4ufj2wqs/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/5maiwwo2yi9dxm7g35ly9u54b/2f24df2mcd1wcjilcgawpx2na/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/825w7wxsa5yey72oamhwziqo6/6my6wwsqb5xuthxk00jp02vbz/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/erv2bc73qhyxt4bm8eong44is/9kcuk2y93nfhev6d2xx8waz50/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/configuration-cache/erv2bc73qhyxt4bm8eong44is/ccnqlic9spppqsntipcswptog/configuration-cache-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build/reports/problems/problems-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/Application.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/cast/CastOptionsProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/cast/CustomMediaRouteActionProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/cast/CustomMediaRouteControllerDialogFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/cast/CustomMediaRouteDialogFactory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/constants/CastConstants.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/enums/MoveAction.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/ui/main/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/ui/main/MainViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/gunock/chromecastexample/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+    <list default="true" id="8d330b96-04d7-45fe-b664-e9cdebeb9eaa" name="Changes" comment="Put receiver and sender code into a single repository">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/android/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +77,11 @@
     "git-widget-placeholder": "feature/monorepo",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/tomaszkiljanczyk/projects/private/Chromecast-Example-Android-Sender",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Suggestions",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -291,7 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755502520321</updated>
-      <workItem from="1755587213945" duration="206000" />
+      <workItem from="1755587213945" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="Update AGP to version 8.12.0">
       <option name="closed" value="true" />
@@ -317,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755526634835</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Put receiver and sender code into a single repository">
+      <option name="closed" value="true" />
+      <created>1755587484293</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755587484293</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +221,7 @@
     <MESSAGE value="Update AGP to version 8.12.0" />
     <MESSAGE value="Migrate to Gradle Kotlin DSL" />
     <MESSAGE value="Resolve build errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolve build errors" />
+    <MESSAGE value="Put receiver and sender code into a single repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put receiver and sender code into a single repository" />
   </component>
 </project>
