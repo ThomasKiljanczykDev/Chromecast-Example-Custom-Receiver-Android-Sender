@@ -1,7 +1,7 @@
 # Chromecast Example Customer Receiver with Android Sender
 
 This project demonstrates a complete Google Cast (Chromecast) implementation with both sender and a custom receiver
-applications.
+application.
 
 ## Project Structure
 
