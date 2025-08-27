@@ -10,7 +10,7 @@ local.properties
 .idea/androidTestResultsUserPreferences.xml
 .idea/deploymentTargetSelector.xml
 .DS_Store
-build
+build/
 captures
 .externalNativeBuild
 .cxx
