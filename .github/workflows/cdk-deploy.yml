@@ -1,0 +1,52 @@
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+        description: 'The environment to deploy to'
+      stack_name:
+        required: true
+        type: string
+        description: 'The name of the stack to deploy'
+
+env:
+  NODE_VERSION: '22'
+  AWS_ACCOUNT_ID: ${{ vars.AWS_ACCOUNT_ID }}
+  AWS_REGION: ${{ vars.AWS_REGION }}
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    defaults:
+      run:
+        working-directory: js/iac
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+          cache-dependency-path: 'js/yarn.lock'
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/GitHubActionsRole
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Install CDK
+        run: yarn workspaces focus @thomas-kiljanczyk-dev/iac
+
+      - name: CDK Deploy
+        run: yarn cdk deploy ${{ inputs.stack_name }} --require-approval never
+        env:
+          DEPLOYMENT_ENVIRONMENT: ${{ inputs.environment }}
