@@ -6,6 +6,6 @@
 
 export class DomainNameConstants {
     public static getReceiverAppDomainName(domain: string): string {
-        return `example-custom-receiver-app.${domain}`;
+        return `example-receiver-app.${domain}`;
     }
 }
