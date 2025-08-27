@@ -7,7 +7,6 @@ on:
         type: choice
         description: 'Environment'
         options:
-          - 'production'
           - 'development'
 env:
   NODE_VERSION: '22'
