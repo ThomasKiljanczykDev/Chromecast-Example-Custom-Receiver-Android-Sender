@@ -3,10 +3,7 @@
  * Copyright (c) 2021 . All rights reserved.
  * Last modified 16/04/2021, 09:10
  */
-import {
-    type DisconnectReason,
-    type EventType
-} from 'chromecast-caf-receiver/cast.framework.system';
+import type { DisconnectReason, EventType } from 'chromecast-caf-receiver/cast.framework.system';
 
 import { handleMoveCommand, handleTextCommand } from './command-handlers';
 import { MOVE_NAMESPACE, TEXT_NAMESPACE } from './constants';
