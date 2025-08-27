@@ -1,4 +1,4 @@
-package pl.gunock.chromecastexample.enums
+package dev.thomaskiljanczyk.chromecastexample.enums
 
 enum class MoveAction {
     LEFT,

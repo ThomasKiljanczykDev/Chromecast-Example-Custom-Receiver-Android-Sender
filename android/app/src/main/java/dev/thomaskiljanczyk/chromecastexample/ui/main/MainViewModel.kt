@@ -1,12 +1,12 @@
-package pl.gunock.chromecastexample.ui.main
+package dev.thomaskiljanczyk.chromecastexample.ui.main
 
 import androidx.lifecycle.ViewModel
 import com.google.android.gms.cast.framework.CastContext
 import com.google.android.gms.cast.framework.CastSession
 import dagger.hilt.android.lifecycle.HiltViewModel
 import org.json.JSONObject
-import pl.gunock.chromecastexample.constants.CastConstants
-import pl.gunock.chromecastexample.enums.MoveAction
+import dev.thomaskiljanczyk.chromecastexample.constants.CastConstants
+import dev.thomaskiljanczyk.chromecastexample.enums.MoveAction
 import javax.inject.Inject
 
 @HiltViewModel

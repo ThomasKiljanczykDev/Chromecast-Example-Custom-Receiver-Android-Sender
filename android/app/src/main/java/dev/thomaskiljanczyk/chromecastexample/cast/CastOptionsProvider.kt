@@ -1,11 +1,11 @@
-package pl.gunock.chromecastexample.cast
+package dev.thomaskiljanczyk.chromecastexample.cast
 
 import android.content.Context
 import com.google.android.gms.cast.framework.CastOptions
 import com.google.android.gms.cast.framework.OptionsProvider
 import com.google.android.gms.cast.framework.SessionProvider
 import com.google.android.gms.cast.framework.media.CastMediaOptions
-import pl.gunock.chromecastexample.R
+import dev.thomaskiljanczyk.chromecastexample.R
 
 @Suppress("unused")
 class CastOptionsProvider : OptionsProvider {

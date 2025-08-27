@@ -1,4 +1,4 @@
-package pl.gunock.chromecastexample.cast
+package dev.thomaskiljanczyk.chromecastexample.cast
 
 import android.content.Context
 import android.os.Bundle

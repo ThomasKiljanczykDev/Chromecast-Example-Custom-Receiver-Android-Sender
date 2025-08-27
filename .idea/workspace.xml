@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c697476-54cf-401a-8827-c7b5881fc6f2" name="Changes" comment="Add js ci pipeline">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/cd-google-cast-receiver.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/cd-infrastructure.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/cdk-deploy.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/bin/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/cdk.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/lib/cloudfront-functions/viewer-redirect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/lib/cloudfront-functions/viewer-security-headers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/lib/stacks/CertificatesStack.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/lib/stacks/ReceiverAppStack.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/lib/utils/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/lib/utils/env.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/lib/utils/props.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/iac/tsconfig.json" afterDir="false" />
+    <list default="true" id="1c697476-54cf-401a-8827-c7b5881fc6f2" name="Changes" comment="Correct CSS style of the app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/js/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/aws-deployment" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,6 +39,9 @@
     &quot;accountId&quot;: &quot;b4112c54-32bc-4449-be2b-2b5efd850cb2&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -63,34 +51,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/aws-deployment",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/tomaszkiljanczyk/projects/private/Chromecast-Example-Android-Sender/js",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.check-types (1).executor": "Run",
-    "npm.check-types.executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.lint.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/tomaszkiljanczyk/projects/private/Chromecast-Example-Android-Sender/js/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Users/tomaszkiljanczyk/projects/private/Chromecast-Example-Android-Sender/js/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tomaszkiljanczyk/projects/private/Chromecast-Example-Android-Sender/js&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.check-types (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.check-types.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/tomaszkiljanczyk/projects/private/Chromecast-Example-Android-Sender/js/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/tomaszkiljanczyk/projects/private/Chromecast-Example-Android-Sender/js/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
@@ -106,7 +94,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.check-types (1)">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/js/receiver-app/package.json" />
       <command value="run" />
@@ -159,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.check-types (1)" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.check-types" />
+        <item itemvalue="npm.check-types (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +169,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1756303080315</updated>
-      <workItem from="1756303081645" duration="4986000" />
+      <workItem from="1756303081645" duration="7598000" />
+      <workItem from="1756310890615" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="Migrate receiver app to TypeScript">
       <option name="closed" value="true" />
@@ -199,7 +188,71 @@
       <option name="project" value="LOCAL" />
       <updated>1756307693471</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add iac code for AWS deployment">
+      <option name="closed" value="true" />
+      <created>1756308215715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756308215715</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove production environment from GitHub actions">
+      <option name="closed" value="true" />
+      <created>1756308491191</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756308491191</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add husky commit hook implementation">
+      <option name="closed" value="true" />
+      <created>1756308533401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756308533401</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update yarn.lock">
+      <option name="closed" value="true" />
+      <created>1756308775199</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756308775199</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Shorten app domain name">
+      <option name="closed" value="true" />
+      <created>1756308880440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756308880440</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update CDK stack names">
+      <option name="closed" value="true" />
+      <created>1756309254489</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756309254489</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix index.html js script bundling">
+      <option name="closed" value="true" />
+      <created>1756310186341</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756310186341</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Correct CSS style of the app">
+      <option name="closed" value="true" />
+      <created>1756310855706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756310855706</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +261,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Migrate receiver app to TypeScript" />
     <MESSAGE value="Add js ci pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add js ci pipeline" />
+    <MESSAGE value="Add iac code for AWS deployment" />
+    <MESSAGE value="Remove production environment from GitHub actions" />
+    <MESSAGE value="Add husky commit hook implementation" />
+    <MESSAGE value="Update yarn.lock" />
+    <MESSAGE value="Shorten app domain name" />
+    <MESSAGE value="Update CDK stack names" />
+    <MESSAGE value="Fix index.html js script bundling" />
+    <MESSAGE value="Correct CSS style of the app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct CSS style of the app" />
   </component>
 </project>

@@ -7,13 +7,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="pl.gunock.chromecastexample.MainActivity"
+    tools:context="dev.thomaskiljanczyk.chromecastexample.MainActivity"
     tools:ignore="AlwaysShowAction">
 
     <item
         android:id="@+id/menu_cast"
         android:title="@string/menu_main_cast"
-        app:actionProviderClass="pl.gunock.chromecastexample.cast.CustomMediaRouteActionProvider"
+        app:actionProviderClass="dev.thomaskiljanczyk.chromecastexample.cast.CustomMediaRouteActionProvider"
         app:showAsAction="always"
         tools:icon="@drawable/mr_button_dark" />
 

@@ -1,4 +1,4 @@
-package pl.gunock.chromecastexample.cast
+package dev.thomaskiljanczyk.chromecastexample.cast
 
 import androidx.mediarouter.app.MediaRouteControllerDialogFragment
 import androidx.mediarouter.app.MediaRouteDialogFactory

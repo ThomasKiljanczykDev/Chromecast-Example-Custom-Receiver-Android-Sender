@@ -1,4 +1,4 @@
-package pl.gunock.chromecastexample.ui.theme
+package dev.thomaskiljanczyk.chromecastexample.ui.theme
 
 import android.app.Activity
 import android.graphics.Color

@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "pl.gunock.chromecastexample"
+    namespace = "dev.thomaskiljanczyk.chromecastexample"
     compileSdk = 36
 
     defaultConfig {

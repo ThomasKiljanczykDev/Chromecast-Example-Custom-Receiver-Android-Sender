@@ -1,4 +1,4 @@
-package pl.gunock.chromecastexample
+package dev.thomaskiljanczyk.chromecastexample
 
 import android.app.Application
 import com.google.android.gms.cast.framework.CastContext
