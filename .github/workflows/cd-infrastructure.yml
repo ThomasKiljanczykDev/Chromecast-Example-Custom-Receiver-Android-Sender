@@ -58,7 +58,7 @@ jobs:
     secrets: inherit
     with:
       environment: ${{ inputs.environment }}
-      stack_name: 'certificates-${{ inputs.environment }}'
+      stack_name: 'example-receiver-app-certificates-${{ inputs.environment }}'
 
   cdk-deploy-receiver-app:
     name: Deploy receiver app stack
@@ -68,4 +68,4 @@ jobs:
     secrets: inherit
     with:
       environment: ${{ inputs.environment }}
-      stack_name: 'receiver-app-${{ inputs.environment }}'
+      stack_name: 'example-receiver-app-${{ inputs.environment }}'

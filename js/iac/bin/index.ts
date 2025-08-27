@@ -19,9 +19,9 @@ const baseProps: BaseStackProps = {
 };
 
 function addDevelopmentStacks() {
-    const certificateStack = new CertificatesStack(app, `certificates-development`, baseProps);
+    const certificateStack = new CertificatesStack(app, `example-receiver-app-certificates-development`, baseProps);
 
-    new ReceiverAppStack(app, `receiver-app-development`, {
+    new ReceiverAppStack(app, `example-receiver-app-development`, {
         ...baseProps,
         certificate: certificateStack.receiverAppCertificate
     });
