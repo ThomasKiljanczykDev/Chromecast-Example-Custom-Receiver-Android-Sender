@@ -1,0 +1,6 @@
+cd js
+
+yarn format
+yarn lint
+(cd iac && yarn check-types)
+(cd receiver-app && yarn check-types)
