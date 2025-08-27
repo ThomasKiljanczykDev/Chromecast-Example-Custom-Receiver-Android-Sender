@@ -1,4 +1,4 @@
-package pl.gunock.chromecastexample.ui.main
+package dev.thomaskiljanczyk.chromecastexample.ui.main
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -33,9 +33,9 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.launch
-import pl.gunock.chromecastexample.R
-import pl.gunock.chromecastexample.enums.MoveAction
-import pl.gunock.chromecastexample.ui.theme.ChromecastExampleTheme
+import dev.thomaskiljanczyk.chromecastexample.R
+import dev.thomaskiljanczyk.chromecastexample.enums.MoveAction
+import dev.thomaskiljanczyk.chromecastexample.ui.theme.ChromecastExampleTheme
 
 @Composable
 fun MainScreen(

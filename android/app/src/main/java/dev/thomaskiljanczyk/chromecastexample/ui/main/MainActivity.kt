@@ -1,4 +1,4 @@
-package pl.gunock.chromecastexample.ui.main
+package dev.thomaskiljanczyk.chromecastexample.ui.main
 
 import android.os.Bundle
 import android.view.Menu
@@ -9,9 +9,9 @@ import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.core.view.MenuItemCompat
 import com.google.android.gms.cast.framework.CastContext
 import dagger.hilt.android.AndroidEntryPoint
-import pl.gunock.chromecastexample.R
-import pl.gunock.chromecastexample.cast.CustomMediaRouteActionProvider
-import pl.gunock.chromecastexample.ui.theme.ChromecastExampleTheme
+import dev.thomaskiljanczyk.chromecastexample.R
+import dev.thomaskiljanczyk.chromecastexample.cast.CustomMediaRouteActionProvider
+import dev.thomaskiljanczyk.chromecastexample.ui.theme.ChromecastExampleTheme
 
 // TODO: Change to ComponentActivity after MediaRouter update
 @AndroidEntryPoint

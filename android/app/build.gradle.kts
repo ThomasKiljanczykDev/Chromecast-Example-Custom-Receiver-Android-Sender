@@ -13,7 +13,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "pl.gunock.chromecastexample"
+        applicationId = "dev.thomaskiljanczyk.chromecastexample"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
