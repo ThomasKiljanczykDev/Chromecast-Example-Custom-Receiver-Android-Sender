@@ -1,0 +1,50 @@
+name: CI javascript
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'js/**'
+      - '.github/workflows/ci-js.yml'
+
+permissions:
+  contents: read
+
+env:
+  NODE_VERSION: '24'
+
+jobs:
+  ci-js:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: js
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+          cache-dependency-path: 'js/yarn.lock'
+
+      - name: Cache ESLint cache
+        uses: actions/cache@v4
+        with:
+          path: js/.cache/.eslintcache
+          # Invalidate cache when any of the listed files changes
+          key: ${{ runner.os }}-eslint-${{ hashFiles('js/yarn.lock', 'js/eslint-config/src/*', 'js/eslint-config/index.js', 'js/eslint.config.js', 'js/.cache/.eslintcache') }}
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Lint the code
+        run: yarn lint
+
+#      - name: Check types - iac
+#        working-directory: js/iac
+#        run: yarn check-types
+
+      - name: Check types - custom receiver app
+        working-directory: js/receiver-app
+        run: yarn check-types
