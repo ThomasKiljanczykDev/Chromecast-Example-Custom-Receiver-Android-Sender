@@ -1,0 +1,27 @@
+{
+    "homepage": "https://thomas-kiljanczyk.dev/",
+    "name": "chromecast-example-custom-receiver",
+    "type": "module",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "iac",
+            "receiver-app",
+            "eslint-config"
+        ]
+    },
+    "scripts": {
+        "lint": "eslint . --cache --cache-strategy content --cache-location .cache/.eslintcache",
+        "format": "prettier --config prettier.config.js  --write .",
+        "prepare": "cd .. && husky ./js/.husky"
+    },
+    "devDependencies": {
+        "@thomas-kiljanczyk-dev/eslint-config": "workspace:*",
+        "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+        "eslint": "^9.34.0",
+        "husky": "^9.1.7",
+        "prettier": "^3.6.2",
+        "typescript": "^5.9.2"
+    },
+    "packageManager": "yarn@4.9.4"
+}

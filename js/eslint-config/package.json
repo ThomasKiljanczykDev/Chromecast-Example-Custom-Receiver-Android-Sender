@@ -1,0 +1,20 @@
+{
+    "name": "@thomas-kiljanczyk-dev/eslint-config",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "main": "index.js",
+    "dependencies": {
+        "typescript-eslint": "^8.41.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.34.0",
+        "@types/eslint-config-prettier": "^6.11.3",
+        "eslint": "^9.34.0",
+        "eslint-config-prettier": "^10.1.8",
+        "typescript": "^5.9.2"
+    },
+    "peerDependencies": {
+        "eslint": "^9"
+    }
+}

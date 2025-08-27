@@ -1,0 +1,20 @@
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+
+.p-3 {
+    padding: 1rem !important;
+}
