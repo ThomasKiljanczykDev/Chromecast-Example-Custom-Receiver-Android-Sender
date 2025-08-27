@@ -1,20 +1,23 @@
-.bg-light {
-    background-color: #f8f9fa !important;
+body {
+    height: 100%;
+    width: 100%;
 }
 
-.bg-dark {
+body, h1 {
+    margin: 0;
+}
+
+.container {
     background-color: #343a40 !important;
+    height: 100%;
+    width: 100%;
 }
 
-.bg-danger {
-    background-color: #dc3545 !important;
-}
-
-.text-light {
+#user-text {
     color: #f8f9fa !important;
+    padding: 1rem;
 }
 
-
-.p-3 {
-    padding: 1rem !important;
+#square {
+    background-color: #dc3545 !important;
 }
