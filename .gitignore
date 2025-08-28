@@ -1,0 +1,3 @@
+/.idea
+!/.idea/prettier.xml
+!/.idea/jsLinters/eslint.xml

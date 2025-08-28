@@ -50,7 +50,7 @@ If you want to use your own custom receiver app:
 - Built with Kotlin and Jetpack Compose
 - Uses Google Cast SDK v3
 - Implements MVVM architecture pattern
-- Package name: `pl.gunock.chromecastexample`
+- Package name: `dev.thomaskiljanczyk.chromecastexample`
 
 ## Configuration
 

@@ -3,7 +3,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.kotlin.compose.compiler)
     alias(libs.plugins.hilt)
 }
@@ -13,7 +14,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "pl.gunock.chromecastexample"
+        applicationId = "dev.thomaskiljanczyk.chromecastexample"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -47,9 +48,8 @@ dependencies {
     implementation(libs.kotlin.stdlib)
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.constraintlayout)
+    implementation(libs.kotlinx.serialization.json)
 
     implementation(libs.play.services.cast.framework)
     implementation(libs.androidx.mediarouter)
@@ -67,9 +67,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
+    ksp(libs.hilt.android.compiler)
 }
 
-kapt {
-    correctErrorTypes = true
-}
