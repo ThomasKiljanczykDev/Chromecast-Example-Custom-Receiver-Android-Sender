@@ -8,13 +8,14 @@ compose-bom = "2025.08.01"
 # AndroidX
 core-ktx = "1.17.0"
 material = "1.12.0"
-constraintlayout = "2.2.1"
 lifecycle = "2.9.2"
 activity-compose = "1.10.1"
 mediarouter = "1.8.1"
 
 # Google Play Services
 play-services-cast = "22.1.0"
+
+kotlinx-serialization-json = "1.8.1"
 
 [libraries]
 # Kotlin
@@ -23,7 +24,6 @@ kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin
 
 # AndroidX Core
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
-androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 androidx-mediarouter = { module = "androidx.mediarouter:mediarouter", version.ref = "mediarouter" }
 
 material = { module = "com.google.android.material:material", version.ref = "material" }
@@ -48,6 +48,8 @@ play-services-cast-framework = { module = "com.google.android.gms:play-services-
 # Hilt
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

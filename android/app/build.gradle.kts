@@ -48,7 +48,7 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
-    implementation(libs.androidx.constraintlayout)
+    implementation(libs.kotlinx.serialization.json)
 
     implementation(libs.play.services.cast.framework)
     implementation(libs.androidx.mediarouter)
