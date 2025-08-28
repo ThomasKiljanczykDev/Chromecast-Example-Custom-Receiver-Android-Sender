@@ -3,11 +3,10 @@ agp = "8.12.2"
 kotlin = "2.2.10"
 ksp = "2.2.10-2.0.2"
 hilt = "2.57"
-compose-bom = "2025.08.00"
+compose-bom = "2025.08.01"
 
 # AndroidX
 core-ktx = "1.17.0"
-appcompat = "1.7.1"
 material = "1.12.0"
 constraintlayout = "2.2.1"
 lifecycle = "2.9.2"
@@ -24,11 +23,9 @@ kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin
 
 # AndroidX Core
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
-androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 androidx-mediarouter = { module = "androidx.mediarouter:mediarouter", version.ref = "mediarouter" }
 
-# Material Design
 material = { module = "com.google.android.material:material", version.ref = "material" }
 
 # Lifecycle
