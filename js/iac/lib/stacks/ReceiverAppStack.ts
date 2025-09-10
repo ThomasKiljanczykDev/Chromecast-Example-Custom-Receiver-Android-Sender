@@ -1,12 +1,12 @@
 import * as cdk from 'aws-cdk-lib';
 import {
     aws_cloudfront as cloudFront,
-    aws_cloudfront_origins as cloudFrontOrigins,
     aws_certificatemanager as cm,
-    aws_route53 as route53,
-    aws_s3 as s3
+    aws_route53 as route53
 } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
+
+import { CloudFrontToS3 } from '@aws-solutions-constructs/aws-cloudfront-s3';
 
 import { DomainNameConstants } from '@/utils/constants';
 import type { BaseStackProps } from '@/utils/props';
@@ -23,22 +23,6 @@ export default class ReceiverAppStack extends cdk.Stack {
             domainName: props.domainNameBase
         });
 
-        const s3CorsRule: s3.CorsRule = {
-            allowedMethods: [s3.HttpMethods.GET, s3.HttpMethods.HEAD],
-            allowedOrigins: ['*'],
-            allowedHeaders: ['*'],
-            maxAge: 300
-        };
-
-        const s3Bucket = new s3.Bucket(this, 's3-bucket', {
-            bucketName: `example-custom-receiver-app-${props.deploymentEnvironment}`,
-            blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
-            accessControl: s3.BucketAccessControl.PRIVATE,
-            removalPolicy: cdk.RemovalPolicy.DESTROY,
-            cors: [s3CorsRule],
-            enforceSSL: true
-        });
-
         const viewerRequestFunction = new cloudFront.Function(this, 'viewer-request-function', {
             code: cloudFront.FunctionCode.fromFile({
                 filePath: 'lib/cloudfront-functions/viewer-redirect.js'
@@ -53,36 +37,33 @@ export default class ReceiverAppStack extends cdk.Stack {
             runtime: cloudFront.FunctionRuntime.JS_2_0
         });
 
-        const cloudFrontDistribution = new cloudFront.Distribution(
-            this,
-            'cloud-front-distribution',
-            {
+        const cloudFrontS3 = new CloudFrontToS3(this, 'cloudfront-s3', {
+            bucketProps: {
+                bucketName: `example-custom-receiver-app-${props.deploymentEnvironment}`
+            },
+            cloudFrontDistributionProps: {
                 comment: `example-custom-receiver-app-${props.deploymentEnvironment}`,
-                defaultBehavior: {
-                    origin: cloudFrontOrigins.S3BucketOrigin.withOriginAccessControl(s3Bucket),
-                    viewerProtocolPolicy: cloudFront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-                    functionAssociations: [
-                        {
-                            function: viewerRequestFunction,
-                            eventType: cloudFront.FunctionEventType.VIEWER_REQUEST
-                        },
-                        {
-                            function: viewerResponseFunction,
-                            eventType: cloudFront.FunctionEventType.VIEWER_RESPONSE
-                        }
-                    ]
-                },
                 priceClass: cloudFront.PriceClass.PRICE_CLASS_100,
                 httpVersion: cloudFront.HttpVersion.HTTP2_AND_3,
                 domainNames: [DomainNameConstants.getReceiverAppDomainName(props.domainNameBase)],
-                certificate: props.certificate
-            }
-        );
+                certificate: props.certificate,
+                defaultRootObject: 'index.html',
+                viewerRequestFunction: {
+                    function: viewerRequestFunction,
+                    eventType: cloudFront.FunctionEventType.VIEWER_REQUEST
+                },
+                viewerResponseFunction: {
+                    function: viewerResponseFunction,
+                    eventType: cloudFront.FunctionEventType.VIEWER_RESPONSE
+                }
+            },
+            logS3AccessLogs: false
+        });
 
         new route53.CnameRecord(this, 'receiver-app-cname-record', {
             zone: hostedZone,
             recordName: DomainNameConstants.getReceiverAppDomainName(props.domainNameBase),
-            domainName: cloudFrontDistribution.distributionDomainName
+            domainName: cloudFrontS3.cloudFrontWebDistribution.distributionDomainName
         });
     }
 }
