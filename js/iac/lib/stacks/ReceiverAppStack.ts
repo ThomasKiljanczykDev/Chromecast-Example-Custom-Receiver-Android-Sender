@@ -57,7 +57,8 @@ export default class ReceiverAppStack extends cdk.Stack {
                     eventType: cloudFront.FunctionEventType.VIEWER_RESPONSE
                 }
             },
-            logS3AccessLogs: false
+            logS3AccessLogs: false,
+            logCloudFrontAccessLog: false
         });
 
         new route53.CnameRecord(this, 'receiver-app-cname-record', {
