@@ -23,13 +23,6 @@ export default class ReceiverAppStack extends cdk.Stack {
             domainName: props.domainNameBase
         });
 
-        const viewerRequestFunction = new cloudFront.Function(this, 'viewer-request-function', {
-            code: cloudFront.FunctionCode.fromFile({
-                filePath: 'lib/cloudfront-functions/viewer-redirect.js'
-            }),
-            runtime: cloudFront.FunctionRuntime.JS_2_0
-        });
-
         const viewerResponseFunction = new cloudFront.Function(this, 'viewer-response-function', {
             code: cloudFront.FunctionCode.fromFile({
                 filePath: 'lib/cloudfront-functions/viewer-security-headers.js'
@@ -48,10 +41,6 @@ export default class ReceiverAppStack extends cdk.Stack {
                 domainNames: [DomainNameConstants.getReceiverAppDomainName(props.domainNameBase)],
                 certificate: props.certificate,
                 defaultRootObject: 'index.html',
-                viewerRequestFunction: {
-                    function: viewerRequestFunction,
-                    eventType: cloudFront.FunctionEventType.VIEWER_REQUEST
-                },
                 viewerResponseFunction: {
                     function: viewerResponseFunction,
                     eventType: cloudFront.FunctionEventType.VIEWER_RESPONSE
