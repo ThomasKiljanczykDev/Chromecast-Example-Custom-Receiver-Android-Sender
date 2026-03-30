@@ -1,23 +1,23 @@
 [versions]
-agp = "8.12.2"
-kotlin = "2.2.10"
-ksp = "2.2.10-2.0.2"
-hilt = "2.57.1"
-compose-bom = "2025.08.01"
-kotlin-plugin-serialization = "2.2.10"
-compose-material3 = "1.5.0-alpha03"
+agp = "9.1.0"
+kotlin = "2.3.20"
+ksp = "2.3.6"
+hilt = "2.59.2"
+compose-bom = "2026.03.01"
+kotlin-plugin-serialization = "2.3.20"
+compose-material3 = "1.5.0-alpha16"
 
 # AndroidX
-core-ktx = "1.17.0"
-material = "1.12.0"
-lifecycle = "2.9.3"
-activity-compose = "1.10.1"
+core-ktx = "1.18.0"
+material = "1.13.0"
+lifecycle = "2.10.0"
+activity-compose = "1.13.0"
 mediarouter = "1.8.1"
 
 # Google Play Services
-play-services-cast = "22.1.0"
+play-services-cast = "22.3.0"
 
-kotlinx-serialization-json = "1.9.0"
+kotlinx-serialization-json = "1.10.0"
 
 [libraries]
 # Kotlin
